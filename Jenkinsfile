@@ -9,6 +9,7 @@ pipeline {
         sh 'ls -ltr'
       }
     }
+    
     stage('Exec') {
       steps {
         sh 'echo "yes"'
