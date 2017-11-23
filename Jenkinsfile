@@ -6,6 +6,7 @@ pipeline {
         sh 'docker cp apic.sh toolkit_running:/root'
         sh 'docker exec -i toolkit_running bash'
         sh 'cd /root'
+        sh 'chmod 775 apic.sh'
       }
     }
   }
