@@ -3,9 +3,8 @@ pipeline {
   stages {
     stage('Exec') {
       steps {
-        sh 'docker exec -ti toolkit_running bash'
+        sh 'docker exec -i toolkit_running bash'
       }
     }
-    
-   }
+  }
 }
