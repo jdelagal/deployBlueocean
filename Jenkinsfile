@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Exec') {
       steps {
-        sh 'docker exec -i -u root toolkit_running script "/bin/bash ps"'
+        sh 'docker exec -i -u root toolkit_running test ps aux'
       }
     }
   }
