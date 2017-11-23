@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Exec') {
       steps {
-        sh 'echo "yes" | ./apic.sh'
+        sh 'echo "yes"'
       }
     }
   }
