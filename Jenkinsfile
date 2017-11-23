@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Exec') {
       steps {
-        sh 'docker exec -i toolkit_running script apic yes no'
+        sh 'docker exec -i -u root toolkit_running script apic yes no'
       }
     }
   }
