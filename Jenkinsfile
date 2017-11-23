@@ -7,6 +7,7 @@ pipeline {
         sh 'docker exec -i toolkit_running bash'
         sh 'cd /root'
         sh 'chmod 775 apic.sh'
+        sh 'echo "yes" | ./script.sh && echo "no" | ./script.sh'
       }
     }
   }
