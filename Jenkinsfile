@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Exec') {
       steps {
-        bat 'cmd'
+        sh 'docker exec -ti toolkit_running script /dev/null ls'
       }
     }
   }
