@@ -4,6 +4,7 @@ pipeline {
     stage('Exec') {
       steps {
         sh 'docker exec -i toolkit_running bash'
+         sh 'apic'
       }
     }
   }
