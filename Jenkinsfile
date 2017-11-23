@@ -8,7 +8,7 @@ pipeline {
         sh 'chmod 775 apic.sh'
         sh 'ls -ltr'
         sh 'echo "yes"'
-        sh 'pwd'
+        sh './$pwd/apic.sh'
       }
     }
   }
