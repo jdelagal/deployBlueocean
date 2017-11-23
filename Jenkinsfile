@@ -7,8 +7,7 @@ pipeline {
         sh 'docker exec -i toolkit_running bash'
         sh 'chmod 775 apic.sh'
         sh 'ls -ltr'
-        sh 'echo "yes"'
-        sh './"apic -h"'
+        sh 'cd /$pwd && ./apic.sh '
       }
     }
   }
