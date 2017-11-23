@@ -12,6 +12,7 @@ pipeline {
     stage('Exec') {
       steps {
         sh 'echo "yes"'
+        sh 'pwd'
       }
     }
   }
