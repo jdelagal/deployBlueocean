@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Prepare') {
       steps {
-        sh 'docker cp apic.sh toolkit_running:/root'
+        sh 'docker cp apic.sh toolkit_running:.'
         sh 'docker exec -i toolkit_running bash'
         sh 'echo "yes" | ./root/script.sh'
       }
